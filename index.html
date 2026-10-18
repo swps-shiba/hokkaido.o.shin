@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>北海道オーシン株式会社｜手稲のトータルカーショップ【提案用サンプル】</title>
+<meta name="description" content="札幌市手稲区のトータルカーショップ。新車・中古車販売、買取、車検、整備、板金塗装、カスタム、タイヤ販売まで自社工場で対応します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --snow:#F2F5F7; --ice:#DDE5EA; --asphalt:#20262B; --steel:#55626B;
+  --plow:#F0661A; --pine:#1F4A3D;
+  --font:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--asphalt);background:var(--snow);line-height:1.8;font-size:16px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--plow);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.sample{background:var(--asphalt);color:#fff;font-size:13px;text-align:center;padding:6px 12px}
+
+header.site{position:sticky;top:0;z-index:5;background:rgba(242,245,247,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--ice)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.logo{font-weight:900;font-size:18px;text-decoration:none;letter-spacing:.02em}
+nav ul{list-style:none;padding:0;display:flex;gap:22px;font-size:14px;font-weight:500}
+nav a{text-decoration:none}
+nav a:hover{color:var(--plow)}
+.tel-btn{background:var(--plow);color:#fff;font-weight:700;text-decoration:none;padding:8px 16px;border-radius:4px;font-size:14px;white-space:nowrap}
+
+/* hero */
+.hero{padding:88px 0 0;overflow:hidden}
+.hero h1{font-weight:900;font-size:clamp(34px,7vw,76px);line-height:1.25;letter-spacing:-.01em}
+.hero h1 span{display:block}
+.hero p.lead{max-width:34em;margin-top:28px;color:var(--steel);font-size:17px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:14px 26px;border-radius:4px;border:2px solid var(--asphalt)}
+.btn.primary{background:var(--asphalt);color:#fff}
+.btn.primary:hover{background:var(--plow);border-color:var(--plow)}
+.btn.ghost:hover{background:var(--asphalt);color:#fff}
+.road{margin-top:72px;height:96px;background:var(--asphalt);position:relative}
+.road::before{content:"";position:absolute;left:0;right:0;top:50%;height:6px;transform:translateY(-50%);
+  background:repeating-linear-gradient(90deg,var(--snow) 0 48px,transparent 48px 96px);background-size:96px 6px;
+  animation:drive 2.4s linear 1 both}
+@keyframes drive{from{background-position:-480px 0}to{background-position:0 0}}
+.road .since{position:absolute;right:24px;top:-1px;transform:translateY(-100%);background:var(--plow);color:#fff;font-weight:900;padding:6px 16px;font-size:15px}
+
+section{padding:88px 0}
+h2{font-size:clamp(26px,4vw,38px);font-weight:900;line-height:1.4;margin-bottom:12px}
+.sub{color:var(--steel);max-width:36em;margin-bottom:44px}
+
+/* services: ruled list, not cards */
+.services{background:#fff}
+.svc{display:grid;grid-template-columns:repeat(2,1fr);gap:0 56px}
+.svc div{padding:22px 0;border-top:2px solid var(--asphalt)}
+.svc h3{font-size:20px;font-weight:700}
+.svc p{color:var(--steel);font-size:15px;margin-top:4px}
+
+/* strength */
+.strength{background:var(--pine);color:#fff}
+.strength .sub{color:#C9DAD3}
+.pts{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.pts h3{font-size:19px;margin-bottom:8px;padding-bottom:8px;border-bottom:3px solid var(--plow);display:inline-block}
+.pts p{font-size:15px;color:#E3EEE9}
+
+/* works */
+.works ul{list-style:none;padding:0;border-bottom:1px solid var(--ice)}
+.works li{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:18px 0;border-top:1px solid var(--ice)}
+.works b{color:var(--plow)}
+.note{font-size:13px;color:var(--steel);margin-top:14px}
+
+/* more */
+.more{background:var(--ice)}
+.more ul{padding-left:1.2em;max-width:40em}
+.more li{margin-bottom:6px}
+
+/* access */
+dl.info{display:grid;grid-template-columns:140px 1fr;border-top:2px solid var(--asphalt);max-width:720px}
+dl.info dt,dl.info dd{padding:16px 0;border-bottom:1px solid var(--ice)}
+dl.info dt{font-weight:700}
+.ph{background:#FFF1E8;padding:1px 6px;border-radius:3px}
+
+footer{background:var(--asphalt);color:#C7D0D6;padding:36px 0;font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+@media (max-width:760px){
+  nav{display:none}
+  .svc,.pts{grid-template-columns:1fr}
+  .works li{grid-template-columns:1fr;gap:4px}
+  dl.info{grid-template-columns:100px 1fr}
+  section{padding:64px 0}
+  .hero{padding-top:56px}
+}
+@media (prefers-reduced-motion:reduce){.road::before{animation:none}html{scroll-behavior:auto}}
+
+/* photos */
+.hero-photo{margin-top:56px}
+.hero-photo img,.gal img{display:block;width:100%;height:auto;background:var(--ice)}
+.hero-photo img{aspect-ratio:16/9;object-fit:cover}
+.gallery .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.gal img{aspect-ratio:4/3;object-fit:cover}
+.gal figcaption{font-size:14px;margin-top:10px;font-weight:700}
+.gal figcaption span{display:block;font-weight:400;color:var(--steel);font-size:13px}
+.map{margin-top:40px;border:2px solid var(--asphalt)}
+.map iframe{display:block;width:100%;height:380px;border:0}
+.map-link{display:inline-block;margin-top:10px;font-size:14px;font-weight:700}
+@media (max-width:760px){.gallery .grid{grid-template-columns:1fr}.hero-photo img{aspect-ratio:4/3}.map iframe{height:300px}}
+</style>
+</head>
+<body>
+<div class="sample">これは提案用のサンプルサイトです。文言・画像・連絡先は仮のもので、実際の内容は打ち合わせで決定します。</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top">北海道オーシン株式会社</a>
+    <nav aria-label="メインメニュー">
+      <ul>
+        <li><a href="#services">サービス</a></li>
+        <li><a href="#gallery">店舗紹介</a></li>
+        <li><a href="#strength">選ばれる理由</a></li>
+        <li><a href="#works">施工事例</a></li>
+        <li><a href="#access">会社情報</a></li>
+      </ul>
+    </nav>
+    <a class="tel-btn" href="tel:000-000-0000">電話で相談</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1><span>買う、直す、整える。</span><span>車のことは、</span><span>手稲の一軒で。</span></h1>
+      <p class="lead">新車・中古車の販売から、車検、修理、板金塗装、カスタムまで。自社工場があるから、ご相談から納車・お引き渡しまで同じスタッフが責任を持って対応します。</p>
+      <div class="cta">
+        <a class="btn primary" href="#access">来店・お問い合わせ</a>
+        <a class="btn ghost" href="#services">サービスを見る</a>
+      </div>
+    </div>
+    <div class="wrap hero-photo"><img src="images/exterior.webp" width="640" height="480" alt="北海道オーシンの展示場。中古車が並び、のぼり旗が立っている"></div>
+    <div class="road" role="img" aria-label="道路のイメージ"><span class="since">創業44年</span></div>
+  </div>
+
+  <section id="services" class="services">
+    <div class="wrap">
+      <h2>車に関することを、まとめて任せられます</h2>
+      <p class="sub">販売店と整備工場を別々に探す必要はありません。ひとつの窓口でご相談ください。</p>
+      <div class="svc">
+        <div><h3>新車・中古車販売</h3><p>ご予算とお車の使い方に合わせて、お探しします。</p></div>
+        <div><h3>車の買取</h3><p>今のお車の乗り換えも、売却だけのご相談も歓迎です。</p></div>
+        <div><h3>車検・点検・整備</h3><p>自社工場で点検から整備まで行います。見積もりの内容は事前にご説明します。</p></div>
+        <div><h3>修理・板金・塗装</h3><p>キズやへこみの補修から、全塗装まで。敷地内の塗装ブースで対応します。</p></div>
+        <div><h3>カスタム</h3><p>リフトアップや足まわりなど、ご希望の仕上がりに合わせて相談できます。</p></div>
+        <div><h3>タイヤ販売・交換</h3><p>雪の多い札幌で安心して走れるタイヤを、ご提案します。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="wrap">
+      <h2>店舗・設備のご紹介</h2>
+      <p class="sub">展示場、塗装ブース、商談スペースがひとつの敷地にそろっています。</p>
+      <div class="grid">
+        <figure class="gal"><img src="images/showroom.webp" width="1360" height="1020" loading="lazy" alt="のぼり旗と中古車が並ぶ展示場"><figcaption>展示場<span>軽自動車からSUV・ミニバンまで展示しています。</span></figcaption></figure>
+        <figure class="gal"><img src="images/paint-booth.webp" width="640" height="480" loading="lazy" alt="車を養生した塗装ブースの内部"><figcaption>塗装ブース<span>板金・塗装を自社工場で行います。</span></figcaption></figure>
+        <figure class="gal"><img src="images/meeting-space.webp" width="640" height="480" loading="lazy" alt="テーブルと椅子が並ぶ商談スペース"><figcaption>商談スペース<span>お見積もりやご相談は、こちらでうかがいます。</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="strength" class="strength">
+    <div class="wrap">
+      <h2>44年続けてこられた理由</h2>
+      <p class="sub">地域のお客様に支えられて、手稲で営業を続けています。</p>
+      <div class="pts">
+        <div><h3>自社工場で完結</h3><p>点検設備や塗装ブース、商談スペースが同じ敷地内にあります。外注の手間なく、話が早く進みます。</p></div>
+        <div><h3>わかりやすい説明</h3><p>見積もりから納車までの流れを、ひとつずつ丁寧にお伝えします。口コミサイトでも高い評価をいただいています。</p></div>
+        <div><h3>専門的な作業にも対応</h3><p>SUVやクロカン車のカスタム、輸入・大型車の部品交換など、ご相談に応じて対応します。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="works" class="works">
+    <div class="wrap">
+      <h2>施工事例</h2>
+      <p class="sub">ご依頼いただいた作業の一部です。</p>
+      <ul>
+        <li><b>マツダ CX-5</b><span>インテークマニホールドの清掃</span></li>
+        <li><b>スズキ ジムニー（JB64）</b><span>リフトアップ</span></li>
+        <li><b>トヨタ ランドクルーザー</b><span>オルタネーター交換</span></li>
+        <li><b>各車種</b><span>全塗装</span></li>
+      </ul>
+      <p class="note">※本番では、作業前後の写真と作業内容・費用の目安を掲載します。</p>
+    </div>
+  </section>
+
+  <section class="more">
+    <div class="wrap">
+      <h2>車以外のご相談も</h2>
+      <p class="sub">地域に根ざして、いくつかの事業を展開しています。</p>
+      <ul>
+        <li>レンタカー</li>
+        <li>マリンジェットの販売・整備</li>
+        <li>フードデリバリー</li>
+        <li>地域のオーガニックアスパラの取り扱い</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="access">
+    <div class="wrap">
+      <h2>会社情報・お問い合わせ</h2>
+      <p class="sub">ご来店前のご相談、お見積もりだけでもお気軽にどうぞ。</p>
+      <dl class="info">
+        <dt>会社名</dt><dd>北海道オーシン株式会社</dd>
+        <dt>所在地</dt><dd>〒006-0807 北海道札幌市手稲区新発寒7条1丁目3−10</dd>
+        <dt>電話</dt><dd><span class="ph">000-000-0000</span></dd>
+        <dt>営業時間</dt><dd><span class="ph">00:00〜00:00（定休日：○曜日）</span></dd>
+        <dt>創業</dt><dd>44年</dd>
+      </dl>
+      <div class="map"><iframe title="北海道オーシン株式会社の地図" src="https://www.google.com/maps?q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E6%89%8B%E7%A8%B2%E5%8C%BA%E6%96%B0%E7%99%BA%E5%AF%92%EF%BC%97%E6%9D%A1%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%91%EF%BC%90&amp;output=embed&amp;hl=ja" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E6%89%8B%E7%A8%B2%E5%8C%BA%E6%96%B0%E7%99%BA%E5%AF%92%EF%BC%97%E6%9D%A1%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%91%EF%BC%90" target="_blank" rel="noopener">Googleマップで開く（経路検索）</a>
+      <div class="cta" style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn primary" href="tel:000-000-0000">電話する</a>
+        <a class="btn ghost" href="mailto:info@example.com">メールで問い合わせる</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 北海道オーシン株式会社（提案用サンプル）</span>
+    <span>このページは検索エンジンに登録されません</span>
+  </div>
+</footer>
+</body>
+</html>
